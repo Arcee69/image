@@ -32,12 +32,14 @@ function App() {
   }, [query])
 
   return (
-    <div className='container-none mx-3 w-full overflow-y-hidden'>
-      <div className='flex flex-row w-3/4 justify-center'>
-            <input type='text' 
-                placeholder='Search Image' 
-                className='placeholder-gray-200 mt-2 w-2/6 justify-center border-solid leading-tight focus:outline-black' 
+    <div className='container-none mx-3 w-full overflow-hidden'>
+      <div className='flex flex-row w-3/3 border-slate-700 justify-center my-5'>
+            <input 
+                type='text' 
+                placeholder=' Search Image' 
+                className='placeholder-gray-200 mt-2 w-2/6 justify-center h-10 leading-tight' 
                 onKeyDown={handleSearch}
+                style={{ border: "1px solid black"}}
             />
         </div> 
         {loading && (<Spinner />)}
