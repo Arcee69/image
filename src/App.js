@@ -32,12 +32,12 @@ function App() {
   }, [query])
 
   return (
-    <div className='container-none mx-3 w-full overflow-hidden'>
+    <div className='w-full overflow-hidden'>
       <div className='flex flex-row w-3/3 border-slate-700 justify-center my-5'>
             <input 
                 type='text' 
                 placeholder=' Search Image' 
-                className='placeholder-gray-200 mt-2 w-2/6 justify-center h-10 leading-tight' 
+                className='placeholder-gray-200 mt-2 md:w-2/6 xs:w-4/6 justify-center h-10 leading-tight' 
                 onKeyDown={handleSearch}
                 style={{ border: "1px solid black"}}
             />
